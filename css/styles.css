@@ -17,70 +17,67 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 300px;
+  height: 450px;
+  width: 350px;
   border-radius: 1rem;
   margin: 100px auto;
+}
+
+.billInput,
+.tipAmount,
+.people,
+.totalContainer {
+  margin: 0.3rem;
 }
 
 .inputContainer {
-  background: white;
-  border-radius: 1.4rem;
-  padding: 0 0.8rem;
-  display: flex;
+  position: relative;
 }
 
-/* * {
-  font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
-  color: white;
+.currencySymbol {
+  position: absolute;
+  left: 4px;
+  top: 3px;
 }
 
-body {
-  background: #8990ec;
+.percentSymbol {
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  padding-right: 2px;
 }
 
-.wrapper {
-  height: 525px;
-  width: 360px;
-  color: white;
-  background: #272639;
-  border-radius: 1rem;
-  padding: 1.2rem;
-  margin: 100px auto;
+.inputText {
+  padding: 8px 14px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
 }
 
-#topContainer {
-  margin-top: 4rem;
+.numberOfPeople {
+  border-radius: 5px;
 }
 
-.container {
-  margin-top: 1.4rem;
+#billAmount,
+#tipAmount {
+  font-size: 1rem;
+  /* background: none;
+  border: none;
+  outline: none;
+  padding: none; */
 }
 
 .title {
   font-weight: bold;
-  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
 }
 
-.inputContainer {
-  background: #353959;
-  border-radius: 1.4rem;
-  padding: 0 0.8rem;
+.controls {
   display: flex;
   align-items: center;
 }
 
-#billTotalInput,
-#tipInput {
-  font-size: 1.2rem;
-  background: none;
-  border: none;
-  outline: none;
-  padding: none;
-}
-
 .buttonContainer {
-  background: #8990ec;
+  background: grey;
   display: grid;
   place-items: center;
   width: 1.6rem;
@@ -89,42 +86,27 @@ body {
 }
 
 .splitButton {
-  background: none;
   border: none;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-}
-
-.splitButton {
-  font-size: 0.8rem;
-  font-weight: bold;
+  background: none;
   display: grid;
   place-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.buttonText {
-  color: #353959 !important;
-}
-
-.splitAmount {
+.numberOfPeople {
   font-size: 1.6rem;
-  margin: 0.8rem;
-}
-
-#bottom {
-  display: flex;
-  justify-content: space-between;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
 }
 
 .totalContainer {
   display: flex;
   flex-direction: column;
-  align-items: end;
 }
 
 .total {
-  font-size: 2rem;
-} */
+  font-size: 1.6rem;
+  font-weight: bold;
+}
